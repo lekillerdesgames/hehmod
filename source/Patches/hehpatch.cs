@@ -53,7 +53,7 @@ namespace hehmod.Patches
                 else hehObject.transform.localScale = new Vector3(OriginalFlipX * 1, scale.y, scale.z);
 
                 hehObject.SetActive(!player.Data.Disconnected && (!player.Data.IsDead || PlayerControl.LocalPlayer.Data.IsDead) &&
-                player.nameText().color != Color.clear);
+                player.nameText().color != Color.clear && !player.inVent);
             }
             foreach (var key in Hehs.Keys)
             {
