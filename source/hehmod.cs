@@ -14,7 +14,7 @@ namespace hehmod
     public class hehmod : BasePlugin
     {
         public const string Id = "com.lekillerdesgames.hehmod";
-        public const string VersionString = "1.0.0";
+        public const string VersionString = "1.0.1";
         public static Sprite heh;
 
         private static DLoadImage _iCallLoadImage;
