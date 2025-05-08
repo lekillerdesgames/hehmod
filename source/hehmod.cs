@@ -6,7 +6,6 @@ using HarmonyLib;
 using Il2CppInterop.Runtime;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using UnityEngine;
-using System.IO;
 
 namespace hehmod
 {
@@ -16,18 +15,11 @@ namespace hehmod
     {
         public const string Id = "com.lekillerdesgames.hehmod";
         public const string VersionString = "1.0.0";
-        public static System.Version Version = System.Version.Parse(VersionString);
         public static Sprite heh;
 
-        public static Vector3 ButtonPosition { get; private set; } = new Vector3(2.6f, 0.7f, -9f);
-
         private static DLoadImage _iCallLoadImage;
-
-        public static string RuntimeLocation;
         public override void Load()
         {
-            RuntimeLocation = Path.GetDirectoryName(Assembly.GetAssembly(typeof(hehmod)).Location);
-
             System.Console.WriteLine("it's heh time :heh:");
 
             heh = CreateSprite("hehmod.Resources.heh.png");
