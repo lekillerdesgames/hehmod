@@ -12,7 +12,7 @@ namespace hehmod.Patches
             position.Alignment = AspectPosition.EdgeAlignments.Top;
             position.DistanceFromEdge = new(0f, 0.1f, 0);
             position.AdjustPosition();
-            __instance.text.text += $"\nhehmod by <color=#FF0000>le killer</color>v{hehmod.VersionString}";
+            __instance.text.text += $"\nhehmod v{hehmod.VersionString} by <color=#FF0000>le killer</color>";
         }
     }
 }
